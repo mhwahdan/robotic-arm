@@ -22,23 +22,22 @@ class RoboticArm():
         self.__baseMotor.start(0)
         self.__baseMotor.ChangeDutyCycle(7)
         time.sleep(0.5)
-        self.__baseMotor.stop()
+        #self.__baseMotor.stop()
         self.__shoulderMotor.start(0)
         self.__shoulderMotor.ChangeDutyCycle(7)
         time.sleep(0.5)
-        self.__shoulderMotor.stop()
+        #self.__shoulderMotor.stop()
         self.__elbowMotor.start(0)
         self.__elbowMotor.ChangeDutyCycle(7)
         time.sleep(0.5)
-        self.__elbowMotor.stop()
+       #self.__elbowMotor.stop()
         self.__wristMotor.start(0)        
         self.__wristMotor.ChangeDutyCycle(7)
         time.sleep(0.5)
-        self.__wristMotor.stop()
+        #self.__wristMotor.stop()
         return
         
     def setBaseMotorAngle(self, angle):
-        angle += 90
         if(angle > 180 or angle < 0):
             return False
         
@@ -46,7 +45,8 @@ class RoboticArm():
         self.__baseMotor.start(0)
         self.__baseMotor.ChangeDutyCycle(numberOfDegrees)
         time.sleep(1)
-        self.__baseMotor.stop()
+        #self.__baseMotor.stop()
+ 
         return True
     
     def setShoulderMotorAngle(self, angle):
@@ -56,7 +56,7 @@ class RoboticArm():
         self.__shoulderMotor.start(0)
         self.__shoulderMotor.ChangeDutyCycle(numberOfDegrees)
         time.sleep(1)
-        self.__shoulderMotor.stop()
+        #self.__shoulderMotor.stop()
         return True
     
     def setElbowMotorAngle(self, angle):
@@ -66,7 +66,7 @@ class RoboticArm():
         self.__elbowMotor.start(0)
         self.__elbowMotor.ChangeDutyCycle(numberOfDegrees)
         time.sleep(1)
-        self.__elbowMotor.stop()
+        #self.__elbowMotor.stop()
         return True
     
     def setWristMotorAngle(self, angle):
@@ -76,7 +76,7 @@ class RoboticArm():
         self.__wristMotor.start(0)
         self.__wristMotor.ChangeDutyCycle(numberOfDegrees)
         time.sleep(1)
-        self.__wristMotor.stop()
+        #self.__wristMotor.stop()
         return True         
 
 
