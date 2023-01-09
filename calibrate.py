@@ -5,6 +5,7 @@ import time
 
 import RPi.GPIO as GPIO 
 
+
  
 OUT_PIN = 11
 PULSE_FREQ = 50
@@ -22,7 +23,7 @@ def main():
     print("Spinning")
     
     # Test the full range of movement. Note only integers are allowe
-    servo1.ChangeDutyCycle(2)
+    servo1.ChangeDutyCycle(7)
     time.sleep(1)
     
     servo1.stop() 
